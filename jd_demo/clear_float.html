@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>
+        清除浮动
+    </title>
+    <style type="text/css">
+        .wrap {
+            width: 500px;
+            background-color: brown;
+
+        }
+
+        .wrap img {
+            width: 80%;
+            margin: solid 20px #fff;
+        }
+
+        .fl {
+            float: left;
+        }
+
+
+        .cle {
+            clear: both;
+        }
+
+        <!--after清除浮动，作为公共样式-->
+        .cl:after {
+            content: ".";
+            clear: both;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap cl">
+        <img class="fl" src="images/test.jpg">
+        <div class="cle"></div>
+    </div>
+
+</body>
+
+</html>

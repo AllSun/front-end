@@ -1,6 +1,28 @@
 vs  emmet 快捷键学习
 vs  常用快捷键
+cmd+/  多行注释
+cmd+shift+k 删除当前行
+cmd+b 隐藏目录
+shift+opt+f 格式化代码
+
+
 
 prettier 代码格式化  
 
 编程入门者：不要使用框架; 要知道为什么框架会存在，他解决了什么问题,他的缺点是啥
+
+浏览器的解析顺序
+
+行级元素、块级元素、css3种定位机制
+浏览器的解析顺序会影响布局，浮动脱离普通文档流
+
+浮动的应用：字体环绕
+
+clear 清除浮动,营销布局比较大，需要理解清除之后和文档流的关系,标签有依赖关系的要注意
+left right both
+
+after选择器  清楚浮动
+before
+
+visibility: hidden;保留位置
+display:block
