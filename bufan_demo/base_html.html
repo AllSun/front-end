@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="孙金榜在学习" />
+    <meta name="description" content="从0开始" />
+
+    <style type="text/css">
+
+    </style>
+    <title>html基础标签</title>
+</head>
+
+<body>
+    <h1>最大的标签，随后递减</h1>
+    <h2>body中的空格，最终只会解析成一个空格</h2>
+    <h3>相对路径：../</h3>
+    <h4>绝对路径：/Users/allsun/Desktop/Shell教材</h4>
+    <h5></h5>
+    <h6>区间就是h1-h6</h6>
+    <p>这是一个段落</p>
+    <hr />
+    <br />
+    <img src="images/test.jpg" alt="图片有问题，请联系管理员">
+    <a href="https://www.baidu.com" target="_self">百度在本页面打开</a>
+    <a href="https://www.baidu.com" target="_blank">百度在新窗口打开</a>
+    <a href="#">空链接</a>
+    <hr />
+    <ul>
+        <li>这个是无序列表</li>
+        <li>内容中的标签如何转义需要研究</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <hr />
+    <ol>
+        <li>这个是有序列表</li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <hr />
+
+    <dl>
+        <dt>选购指南</dt>
+        <dd>手机</dd>
+        <dd>笔记本</dd>
+        <hr />
+        <dt>服务中心</dt>
+        <dd>没有样式</dd>
+        <dd>没有符号</dd>
+    </dl>
+    <div>常用布局标签</div>
+    <span>常用布局标签</span>
+    <hr />
+    <div>
+        <ul>
+            <li>首页</li>
+            <li>秋衣</li>
+            <li>秋裤</li>
+        </ul>
+    </div>
+    <hr />
+    <!--注释，以下标签开发不常用-->
+    <em>em标签效果</em>
+    <i>i标签效果</i>
+    <strong>strong标签效果</strong>
+    <b>b标签效果</b>
+    <p>H<sub>2</sub>O</p>
+    <p>5<sup>2</sup>=25</p>
+    <ins>下划线</ins>
+    <hr />
+    <del>删除线</del>
+
+    <div>
+        我想说：
+        <blockquote>学习重要的是学会总结，然后就是重复劳动解决问题</blockquote>
+    </div>
+    <p>我说：<q>坚持就是胜利</q></p>
+    <p>这是一个转义字符：&copy;</p>
+    <hr />
+
+    <table bgcolor="orange" cellspacing="20" cellpadding="20" border="5">
+        <caption>工作表</caption>
+        <tr>
+            <th>周一</th>
+            <th>周二</th>
+            <th>周三</th>
+            <th>周四</th>
+            <th>周五</th>
+        </tr>
+        <tr>
+            <td rowspan="2">摸鱼</td>
+            <td>散步</td>
+            <td>摸鱼</td>
+            <td colspan="2">总结</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <form action="url" method="GET|POST" name="提交身份信息"></form>
+
+    <input type="text" name="user" value="请输入用户名" />
+    <input type="password" name="pwd" value=""/>
+    <!--checked 默认选择-->
+    <input type="radio" name="sex" value="0" checked/>
+    <input type="radio" name="sex" value="1" />
+    <hr/>
+    <input type="checkbox" name="things" value="0" />
+    <input type="checkbox" name="things" value="1" />
+    <input type="checkbox" name="things" value="2" />
+    <hr/>
+    <input type="file" name="file">
+    <hr/>
+    <select name="city">
+        <option value="1">北京</option>
+        <option value="2">上海</option>
+        <option value="3" selected>福州</option>
+    </select>
+    <hr/>
+    <textarea name="study"  cols="30" rows="10"></textarea>
+    <hr/>
+    <input type="submit" value="提交">
+    <hr/>
+    <input type="button" value="按钮">
+    <hr/>
+    <input type="reset" value="重置">
+    <hr/>
+    <input type="image" src="images/test.jpg" value="这是一个按钮">
+    <hr/>
+    <form >
+        <!--通过label的for指向按钮的id来绑定，for和id属性的值要相同-->
+        <label for="male">女士</label>
+        <input type="radio" name="sex" id="male" />
+    </form>
+    <fieldset>
+        <legend>健康信息</legend>
+        身高：<input type="text"/>
+        体重：<input type="text"/>
+    </fieldset>
+</body>
+
+</html>
